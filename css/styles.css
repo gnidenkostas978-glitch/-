@@ -1,0 +1,441 @@
+*
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+background: #fff;
+color: #333;
+padding: 15px;
+}
+
+.page {
+width: 844px;
+max-width: 100%;
+margin: 0 auto;
+padding-bottom: 90px;
+}
+
+/* =========================================
+ШАПКА САЙТУ (Головна сторінка - index.html)
+========================================= */
+.site-header {
+border: 2px solid #2e7d32;
+padding: 15px;
+background-color: #fff;
+max-width: 900px;
+margin: 0 auto 20px auto;
+text-align: center;
+}
+
+.header-box h1 {
+font-size: 1.8rem;
+letter-spacing: 2px;
+margin-bottom: 10px;
+color: #000;
+}
+
+.main-nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+font-weight: bold;
+font-size: 0.9rem;
+}
+
+.main-nav ul li a {
+text-decoration: none;
+color: #333;
+transition: color 0.2s;
+}
+
+.main-nav ul li a:hover {
+color: #1976d2;
+}
+
+.main-nav ul li span {
+color: #777;
+}
+
+/* =========================================
+ГОЛОВНИЙ КОНТЕЙНЕР (Головна сторінка)
+========================================= */
+.main-container {
+border: 2px solid #3f51b5;
+background-color: #fff;
+max-width: 900px;
+margin: 0 auto 20px auto;
+padding: 25px;
+}
+
+.content-section {
+margin-bottom: 30px;
+}
+
+.content-section h2 {
+text-align: center;
+font-size: 1.5rem;
+letter-spacing: 1px;
+margin-bottom: 20px;
+color: #444;
+}
+
+/* Секція: СЮЖЕТ */
+.story-content {
+border: 1px solid #ccc;
+padding: 25px 20px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+font-size: 1rem;
+line-height: 1.5;
+}
+
+.story-content blockquote {
+background: #f9f9f9;
+border-left: 4px solid #3f51b5;
+padding: 12px 15px;
+font-style: italic;
+}
+
+.story-content cite {
+display: block;
+text-align: right;
+font-size: 0.85rem;
+color: #666;
+margin-top: 5px;
+}
+
+/* Секція: ЗНІМАЛЬНА ГРУПА І АКТОРИ */
+.team-content {
+padding-left: 10px;
+}
+
+.team-content .text-label {
+font-size: 0.85rem;
+color: #666;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+.team-content ol {
+padding-left: 20px;
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+.team-content ul {
+padding-left: 20px;
+list-style-type: disc;
+margin-top: 4px;
+margin-bottom: 8px;
+}
+
+.team-content .dots {
+list-style: none;
+font-weight: bold;
+margin-top: 5px;
+}
+
+/* Секція: ФОТО (Картинки повністю заповнюють блоки, БЕЗ рамок) */
+.photo-grid {
+display: flex;
+gap: 15px;
+justify-content: space-between;
+}
+
+.photo-card {
+flex: 1;
+border: none; /* Рамку прибрано */
+height: 220px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+background-color: transparent;
+}
+
+.photo-card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+border-radius: 8px; /* Додано невелике заокруглення для естетики */
+}
+
+.photo-card a {
+display: block;
+width: 100%;
+height: 100%;
+}
+
+/* Секція: НАГОРОДИ (Таблиця) */
+.custom-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+font-size: 0.90rem;
+}
+
+.custom-table th,
+.custom-table td {
+border: 1px solid #777;
+padding: 10px;
+text-align: left;
+vertical-align: middle;
+}
+
+.custom-table th {
+background-color: #f2f2f2;
+font-weight: bold;
+}
+
+.custom-table tfoot td {
+background-color: #fff;
+font-weight: bold;
+}
+
+.merged-content-cell {
+background-color: #fcfcfc;
+text-align: center;
+vertical-align: middle;
+font-size: 0.85rem;
+line-height: 1.4;
+padding: 10px;
+}
+
+.merged-content-cell strong {
+color: #2c3e50;
+}
+
+.section-divider {
+border: none;
+border-top: 1px solid #aaa;
+margin: 30px 0;
+}
+
+/* =========================================
+ПІДВАЛ САЙТУ (Головна сторінка)
+========================================= */
+.site-footer {
+border: 2px solid #c62828;
+background-color: #fff;
+max-width: 900px;
+margin: 0 auto;
+padding: 15px;
+text-align: center;
+font-size: 0.85rem;
+}
+
+.footer-content {
+display: flex;
+justify-content: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #333;
+}
+
+/* =========================================
+ВЕРХНІЙ БЛОК (Сторінка контактів - contact.html)
+========================================= */
+.top {
+display: flex;
+border: 1px dashed #333;
+min-height: 325px;
+margin-top: 10px;
+}
+
+.info {
+flex: 0 0 63%;
+border-right: 1px solid #333;
+padding: 12px 10px 12px 0;
+font-size: 22px;
+line-height: 27px;
+overflow: hidden;
+}
+
+.info p {
+margin: 0;
+}
+
+.pic {
+width: 64px;
+height: 90px;
+border: 1px solid #333;
+background: #fff;
+object-fit: cover;
+}
+
+.pic.left { float: left; margin: 6px 45px 8px 11px; }
+.spacer { float: right; width: 0; height: 81px; }
+.pic.right { float: right; clear: right; margin: 18px 14px 0 12px; }
+.pic.nowrap { float: left; clear: both; margin: 13px 0 0 25px; }
+
+/* Картки (Зображення повністю заповнюють блок, БЕЗ рамок) */
+.cards {
+flex: 1;
+position: relative;
+}
+
+.card {
+position: absolute;
+width: 142px;
+height: 153px;
+border-radius: 14px;
+border: none; /* Рамки прибрано /
+padding: 0;
+overflow: hidden;
+background: transparent;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15); / Легка тінь, щоб картки не зливалися */
+}
+
+.card img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.card.red { left: 47px; top: 34px; z-index: 1;}
+.card.blue { left: 92px; top: 79px; z-index: 2;}
+.card.orange { left: 137px; top: 124px; z-index: 3;}
+
+/* =========================================
+СПІЛЬНІ БЛОКИ (Меню, Форми, Соцмережі)
+========================================= */
+.menu {
+position: sticky;
+top: 0;
+z-index: 10;
+display: flex;
+background: #fff;
+border: 1px solid #333;
+border-top: 0;
+}
+
+.menu a {
+flex: 1;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #000;
+text-decoration: none;
+font-size: 15px;
+border-left: 1px solid #333;
+}
+
+.menu a:first-child { border-left: 0; }
+.menu a:hover { background: #b3d4fc; }
+
+form { position: relative; }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+legend { position: absolute; top: 4px; left: 4px; padding: 0; font-size: 13px; }
+
+input[type=text], input[type=email], input[type=password], input[type=tel],
+input[type=url], input[type=number], input[type=date], select, textarea {
+display: block;
+width: 100%;
+height: 33px;
+margin: 0;
+border: 1px solid #333;
+background: #fff;
+padding: 0 8px;
+font-size: 13px;
+font-family: inherit;
+}
+
+.btn {
+height: 30px;
+padding: 0 16px;
+background: #fff;
+border: 1px solid #333;
+font: bold 13px Arial, sans-serif;
+cursor: pointer;
+}
+
+.btn:hover { background: #f1f1f1; }
+
+.f { margin-bottom: 8px; }
+.f label { display: block; height: 20px; line-height: 20px; font-size: 17px; }
+.f input, .f select { margin-top: 6px; }
+
+/* Форма реєстрації */
+#reg { background: #b3d4fc; border: 1px dashed #333; height: 466px; }
+.reg-grid { display: grid; grid-template-columns: 275px 271px; column-gap: 95px; justify-content: center; }
+.col-left { padding-top: 28px; }
+.col-right { padding-top: 31px; }
+
+.avatar {
+width: 120px; height: 120px; border: 1px solid #333; border-radius: 50%; background: #fff;
+margin: 0 auto 2px; display: flex; align-items: center; justify-content: center;
+}
+
+.col-right .f:first-child { margin-bottom: 16px; }
+.gender { margin-top: 3px; }
+.gender .gl { display: block; height: 20px; line-height: 20px; font-size: 17px; }
+.gender .opts { display: flex; align-items: center; gap: 37px; height: 24px; margin-top: 4px; padding-left: 20px; font-size: 13px; }
+.gender .opts label { display: flex; align-items: center; gap: 4px; }
+.gender input { margin: 0; }
+
+.inl { display: flex; align-items: center; }
+.inl label { font-size: 17px; }
+.inl.age { margin-top: 7px; }
+.inl.age label { width: 67px; }
+.inl.age input { width: 86px; height: 30px; }
+.inl.date { margin-top: 8px; }
+.inl.date label { margin-right: 12px; }
+.inl.date input { width: 108px; height: 37px; padding: 0 4px; }
+
+.terms { display: flex; align-items: center; justify-content: center; gap: 6px; height: 24px; margin-top: 4px; font-size: 13px; }
+.terms input { margin: 0; }
+
+.btns { display: flex; justify-content: center; gap: 71px; margin-top: 11px; padding-left: 24px; }
+.btns .btn:first-child { width: 140px; }
+.btns .btn:last-child { width: 131px; }
+
+/* Форма входу */
+#login {
+width: 387px; max-width: 100%; height: 174px; margin-left: 247px;
+background: #c5e0b4; border: 1px dashed #333; padding: 39px 60px 0 54px;
+}
+#login legend { left: 0; right: 0; top: 5px; text-align: center; }
+#login input { height: 34px; margin-bottom: 11px; }
+#login .btn { display: block; width: 95px; margin: 13px auto 0; }
+
+/* Форма зворотного зв'язку */
+#feedback { background: #fff2a8; border: 1px solid #333; height: 208px; }
+.fb-grid { display: flex; gap: 19px; padding: 34px 43px 0 37px; }
+.fb-left { width: 271px; flex: none; padding-top: 3px; }
+.fb-left input, .fb-left select { margin-bottom: 12px; }
+.fb-left .btn { display: block; width: 131px; margin: 0 auto; }
+.fb-grid textarea { flex: 1; height: 168px; padding: 18px 10px 0 45px; resize: none; }
+
+/* Соцмережі */
+.social { display: flex; align-items: center; gap: 11px; margin: 13px 0 0 4px; }
+.social .title {
+display: flex; align-items: center; width: 170px; height: 65px; padding: 0 8px;
+border: 1px dashed #333; font-size: 18px; line-height: 1.15;
+}
+.social .icons {
+display: flex; align-items: center; justify-content: center; gap: 18px;
+width: 241px; height: 65px; border: 1px dashed #333;
+}
+.social .icons a { width: 56px; height: 56px; border: 1px dashed #333; border-radius: 50%; display: block; }
+.social .icons a:hover { background: #b3d4fc; }
+
+/* Фіксована стрілка */
+.to-top { position: fixed; right: 24px; bottom: 24px; width: 72px; height: 72px; display: block; z-index: 1000; }
+.to-top svg { width: 100%; height: 100%; }

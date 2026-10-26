@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Остап Вишня — український письменник-гуморист і сатирик">
+<title>Остап Вишня — український гуморист</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+<div class="page">
+
+  <!-- Верхній блок -->
+  <header class="top">
+    <div class="info">
+      <img class="pic left" src="images/ostap_visnya.jpg" alt="Портрет Остапа Вишні">
+      <span class="spacer"></span>
+      <img class="pic right" src="images/books.jpg" alt="Остап Вишня, «Мисливські усмішки»">
+      <p><strong>Остап Вишня</strong> (справжнє ім'я — Павло Михайлович Губенко, 1889–1956) — український письменник-гуморист і сатирик. Його «усмішки» — коротка гумористична проза — люблять і читають понад сто років. Гумор Остапа Вишні добрий, народний, а мова жива й соковита.</p>
+      <img class="pic nowrap" src="images/som.jpg" alt="Остап Вишня, «Сом»">
+    </div>
+    <div class="cards">
+      <div class="card red"><img src="images/books.jpg" alt="«Мисливські усмішки»"></div>
+      <div class="card blue"><img src="images/moia-avtobiohrafiia.jpg" alt="«Моя автобіографія. Письменники»"></div>
+      <div class="card orange"><img src="images/som.jpg" alt="«Сом»"></div>
+    </div>
+  </header>
+
+  <!-- Меню -->
+  <nav class="menu">
+    <a href="#reg">Реєстрація читача</a>
+    <a href="#login">Вхід</a>
+    <a href="#feedback">Зворотний зв'язок</a>
+  </nav>
+
+  <main>
+
+    <!-- Форма реєстрації -->
+    <form id="reg" action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Реєстрація читача</legend>
+
+        <div class="reg-grid">
+          <div class="col-left">
+            <div class="avatar">
+              <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/>
+          </svg>
+            </div>
+
+            <div class="f">
+              <label for="fname">Ім'я</label>
+              <input type="text" id="fname" name="fname" placeholder="Ім'я" required minlength="2" maxlength="30">
+            </div>
+            <div class="f">
+              <label for="lname">Прізвище</label>
+              <input type="text" id="lname" name="lname" placeholder="Прізвище" required minlength="2" maxlength="30">
+            </div>
+
+            <div class="gender">
+              <span class="gl">Стать</span>
+              <div class="opts">
+                <label for="male"><input type="radio" name="sex" id="male" value="male" checked>Чоловіча</label>
+                <label for="female"><input type="radio" name="sex" id="female" value="female">Жіноча</label>
+              </div>
+            </div>
+
+            <div class="inl age">
+              <label for="age">Вік</label>
+              <input type="number" id="age" name="age" value="21" min="14" max="100" step="1">
+            </div>
+            <div class="inl date">
+              <label for="bd">Дата народження</label>
+              <input type="date" id="bd" name="birthdate" min="1920-01-01" max="2012-12-31">
+            </div>
+          </div>
+
+          <div class="col-right">
+            <div class="f">
+              <label for="country">Країна проживання</label>
+              <select id="country" name="country" required>
+                <option value="" selected disabled>Оберіть країну проживання</option>
+                <optgroup label="Європа">
+                  <option value="ua">Україна</option>
+                  <option value="pl">Польща</option>
+                  <option value="de">Німеччина</option>
+                </optgroup>
+                <optgroup label="Інше">
+                  <option value="other">Інша країна</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="f">
+              <label for="phone">Номер телефону</label>
+              <input type="tel" id="phone" name="phone" placeholder="+38(0XX)XXX-XX-XX"
+                     pattern="\+38\(0\d{2}\)\d{3}-\d{2}-\d{2}" title="Формат: +38(0XX)XXX-XX-XX" required>
+            </div>
+            <div class="f">
+              <label for="social">Соцмережа</label>
+              <input type="url" id="social" name="social" placeholder="Посилання на соц.мережу">
+            </div>
+            <div class="f">
+              <label for="email">Електронна пошта</label>
+              <input type="email" id="email" name="email" placeholder="Ел. пошта" required>
+            </div>
+            <div class="f">
+              <label for="pass">Пароль</label>
+              <input type="password" id="pass" name="password" placeholder="Пароль" required minlength="8" autocomplete="new-password">
+            </div>
+            <div class="terms">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">Чи згідні Ви з умовами?</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="btns">
+          <button class="btn" type="submit">Зареєструватися</button>
+          <button class="btn" type="reset">Відміна</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <!-- Форма входу -->
+    <form id="login" action="#" method="post">
+      <fieldset>
+        <legend>Вхід для читачів:</legend>
+        <input type="text" id="log" name="login" placeholder="Логін" aria-label="Логін" required>
+        <input type="password" id="lpass" name="password" placeholder="Пароль" aria-label="Пароль" required>
+        <button class="btn" type="submit">Вхід</button>
+      </fieldset>
+    </form>
+
+    <!-- Форма зворотного зв'язку -->
+    <form id="feedback" action="#" method="post">
+      <fieldset>
+        <legend>Зворотний зв'язок:</legend>
+        <div class="fb-grid">
+          <div class="fb-left">
+            <input type="text" name="name" placeholder="Ім'я" aria-label="Ім'я" required>
+            <input type="email" name="email" placeholder="Ел. пошта" aria-label="Ел. пошта" required>
+            <select name="topic" aria-label="Тема повідомлення" required>
+              <option value="" selected disabled>Тема повідомлення</option>
+              <option value="about-site">Про сайт</option>
+              <option value="works">Про творчість письменника</option>
+              <option value="suggestion">Пропозиція</option>
+            </select>
+            <button class="btn" type="submit">Відправити</button>
+          </div>
+          <textarea name="message" placeholder="Повідомлення" aria-label="Повідомлення" required maxlength="500"></textarea>
+        </div>
+      </fieldset>
+    </form>
+
+  </main>
+
+  <!-- Соцмережі -->
+  <footer class="social">
+    <div class="title">Посилання на соц.мережі</div>
+    <div class="icons">
+      <a href="#" aria-label="Facebook" title="Facebook"></a>
+      <a href="#" aria-label="Instagram" title="Instagram"></a>
+      <a href="#" aria-label="YouTube" title="YouTube"></a>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Завжди видима стрілка нагору -->
+<a class="to-top" href="#top" aria-label="Нагору">
+  <svg viewBox="0 0 54 54" width="72" height="72"><path d="M27 4 L50 28 H36 V50 H18 V28 H4 Z" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5" stroke-linejoin="round"/></svg>
+</a>
+
+</body>
+</html>
